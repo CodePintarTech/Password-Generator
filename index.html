@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@CodePintar | Random Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-key"></i> Random Password Generator</h1>
+        <div class="input-container">
+            <label for="length">Panjang Password:</label>
+            <input type="number" id="length" min="1" max="100" value="12">
+        </div>
+        <button onclick="generatePassword()">Generate <i class="fas fa-cog"></i></button>
+        <div id="result">
+            <p>Password Anda:</p>
+            <input type="text" id="password" readonly>
+            <button onclick="copyPassword()" id="copyBtn">Copy <i class="fas fa-copy"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
